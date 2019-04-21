@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+${1:.enter()}.append('rect')
+	.attr('x', $2)
+	.attr('y', $3)
+	.attr('width', $4)
+	.attr('height', $5)
+	.attr('rx', ${6:0})
+	.attr('ry', ${7:0})
+	.style('fill', '${8:#000}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

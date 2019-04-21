@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+${1:.enter()}.append('ellipse')
+	.attr('cx', $2)
+	.attr('cy', $3)
+	.attr('rx', $4)
+	.attr('ry', $5)
+	.style('fill', '${6:#000}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ellipse</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+d3.axisTop(${1:xScale});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>axist</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+${1:const} ${2:xScale} = d3.scaleBand()
+	.domain($3)
+	.range([$4, $5])
+	.paddingInner([${6:0.2}])
+	.paddingOuter([${7:0.2}]);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>scaleb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

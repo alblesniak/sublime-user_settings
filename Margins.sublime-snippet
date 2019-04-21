@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+const ${1:margin} = { top: ${2:20}, right: ${3:20}, bottom: ${4:20}, left: ${5:20} };
+const ${6:width} = ${7:960} - ${1/\*//}.left - ${1/\*//}.right;
+const ${8:height} = ${9:640} - ${1/\*//}.top - ${1/\*//}.bottom;
+
+const ${10:svg} = d3.select('${11:body}').append('svg')
+	.attr('width', ${6/\*//} + ${1/\*//}.left + ${1/\*//}.right)
+	.attr('height', ${8/\*//} + ${1/\*//}.top + ${1/\*//}.bottom)
+
+const ${12:graph} = ${10/\*//}.append('g')
+	.attr('transform', 'translate(' + ${1/\*//}.left + ',' + ${1/\*//}.top + ')');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>margins</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoFileName",
+		"Color Highlight",
+		"Emmet",
+		"gruvbox",
+		"Gruvbox Dark",
+		"JavaScript Completions",
+		"LiveReload",
+		"Package Control",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"Terminal"
+	],
+	"repositories":
+	[
+		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json"
+	]
+}

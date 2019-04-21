@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+${1:const} ${2:areaGenerator} = d3.area()
+    .x(d => d.${3:x})
+    .y0(d => ${4:yScale}(d.${5:low}))
+    .y1(d => ${6:yScale}(d.${7:high}));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>area</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
