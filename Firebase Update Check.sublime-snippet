@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+var ${1:data} = [];
+
+${2:db}.collection('${3:collectionName}').onSnapshot(${4:res} => {
+
+	${4/\*//}.docChanges().forEach(${5:change} => {
+
+		const ${6:doc} = {...${5/\*//}.doc.data(), id: ${5/\*//}.doc.id};
+
+		switch (${5/\*//}.type) {
+			case 'added':
+				${1/\*//}.push(${6/\*//});
+				break;
+			case 'modified':
+				const ${7:index} = ${1/\*//}.findIndex(${8:item} => ${8/\*//}.id == ${6/\*//}.id);
+				${1/\*//}[${7/\*//}] = ${6/\*//}
+				break;
+			case 'removed':
+				${1/\*//} = ${1/\*//}.filter(${9:item} => ${9:item}.id !== ${6:item}.id);
+				break;
+			default:
+				break;
+		};
+	});
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fire</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
