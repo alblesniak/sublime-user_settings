@@ -21,7 +21,7 @@ ${2:db}.collection('${3:collectionName}').onSnapshot(${4:res} => {
 				break;
 			default:
 				break;
-		};
+		}
 	});
 });
 ]]></content>
